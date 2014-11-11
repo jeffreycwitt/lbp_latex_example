@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xml:space="preserve">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Lectio 1, de Fide</title>
+    <author xml:id="PP">Petrus Plaoul</author>
+    <editor xml:id="JW">Jeffrey C. Witt</editor>
+   </titleStmt>
+   <editionStmt>
+    <edition n="2011.10-dev-master">
+     <title>Lectio 1, de Fide</title>
+     <date when="2011-10-04">October 04, 2011</date>
+    </edition>
+   </editionStmt>
+   <publicationStmt>
+    <publisher>LombardPress</publisher>
+    <pubPlace>Sacramento, CA</pubPlace>
+    <availability status="free">
+     <p>Published under a <ref target="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License</ref></p>
+    </availability>
+    <date when="2011-03-25">March 23rd, 2011</date>
+   </publicationStmt>
+   <sourceDesc>
+    <listWit>
+     <witness xml:id="R">Reims</witness>
+     <witness xml:id="V">Vatican</witness>
+     <witness xml:id="S">Sorbonne</witness>
+     <witness xml:id="SV">St. Victor</witness>
+    </listWit>
+   </sourceDesc>
+   </fileDesc>
+  <encodingDesc>
+   <variantEncoding method="parallel-segmentation" location="internal"/>
+  </encodingDesc>
+ </teiHeader>
+ <text>
+  <front xml:lang="la">
+   <div xml:id="includeList">
+    <xi:include href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/citationlists/workscited.xml" xpointer="worksCited"></xi:include>
+    <xi:include href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/citationlists/Prosopography.xml" xpointer="prosopography"></xi:include>
+   </div>
+  </front>
+  <body>
+   <div xml:id="lectio1">
+    <head subtype="title">Lectio 1, de Fide</head>
+     <div>
+         <head xml:id="l1-Hquipfs">
+             <supplied>Quaestio: utrum in causa iudiciali fidei contra traditionem pure humanitus adinventam iudex idoneus ferret pro fide sententiam</supplied>
+         </head>
+   
+      <p xml:id="l1-cpspfs">Circa 
+          <ref corresp="#l1-Qmdtmoc">prologum 
+            <app to="#l1-Apetpla">
+                <lem><title ref="#Sentences">Sententiarum</title></lem>
+                <rdg wit="#R #SV" type="intextu">Magistri Petri Plaoul</rdg>
+                <note xml:lang="en">While an important addition that identifies the author of this phrase, it is also out of place. Text is clearly referring to the prologue of Lombard "in which he [Lombard] says." It seems likely that later scribes somewhat violently added Plaoul's name here as part of way identify the author of the following commentary.</note>
+            </app> 
+              in quo 
+              <name ref="#Lombard">Magister</name> dicit</ref>
+           quod intentionis suae est 
+          <cit>
+              <quote xml:id="l1-Qmdtmoc" ana="#pl-b1prol-a">munire Davidicam turrim vel potius munitam ostendere 
+                  <app to="#l1-Aostcly">
+                    <lem>clypeis</lem>
+                    <rdg wit="#V" type="om."/>
+                  </app>
+              </quote>
+              <bibl>
+                  <name>Lombard</name>, 
+                  <title>Sentences</title>, I, prologus., (I:1)
+              </bibl>
+          </cit>
+         etc, quaero istam quaestionem: utrum 
+          <app to="#l1-Autrmin">
+            <lem>in</lem>
+            <rdg wit="#R #SV #S" type="om."/>
+            <note xml:id="en">We prefer the inclusion of "in" here because we think it is important read "causa" in the ablative case, and because preference is for the more explicit reading "in" helps make this clear.</note>
+          </app> causa iudiciali fidei 
+          <app to="#l1-Acontra">
+            <lem>contra traditionem</lem>
+            <rdg wit="#R #SV">contradictionem</rdg>
+            <note>While following R and SV is our default practice is equal, here we think "contra traditionem" makes more sense. Further this reading is supported by reportationes E, PV, and P</note>
+        </app> 
+          pure humanitus adinventam iudex idoneus ferret pro fide sententiam.</p>
+     </div>
+     
+     <div>
+         <head xml:id="l1-Hcccccc">
+             <supplied>Conclusio</supplied>
+         </head>
+   
+      <p xml:id="l1-eipdlt">Et inprimis protestatur quod fides non subicitur humano iudicio, et haec est una conclusio. Patet quia fides est donum Dei supernaturale et est de illis de quibus 
+          <ref corresp="#l1-Qodapl">
+              <name ref="#James">Iacobum Apostolus</name> dicit
+          </ref> 
+          <app to="#l1-Adicquo">
+            <lem>quod</lem>
+            <rdg wit="#R #V" type="om."/>
+            <note xml:lang="en">While minor our preference for the more explicit reading suggests including "quod"</note>
+           </app> 
+          <cit>
+              <quote xml:id="l1-Qodapl" ana="#iac1_17">omne datum optimum <cb ed="#V" n="5va"/> et omne donum perfectum desursum est descendens a Patre luminum.</quote>
+              <bibl>Iacobus 1:17</bibl>
+          </cit> 
+          Et fundabitur haec conclusio 
+          <app to="#l1-Aconinf">
+              <lem>infra</lem>
+              <rdg wit="#V">prima</rdg>
+          </app> 
+          per diversa media. Unde nisi haec conclusio esset vera, 
+          <app to="#l1-Averseq">
+              <lem>sequeretur</lem>
+              <rdg wit="#S">sequitur</rdg>
+          </app> 
+          quod quis posset credere articulis fidei sine fide, hoc autem est falsum. 
+          Item 
+          <ref corresp="#l1-Qssrsdh">
+              <title ref="IIpetr"><supplied>secundae</supplied> Petri</title>
+          </ref> 
+          dicitur quod 
+          <cit>
+              <quote xml:id="l1-Qssrsdh" ana="#IIpetr1_21">Spiritu Sancto repleti locuti sunt sancti Dei homines</quote>
+              <bibl>II Petrus 1:21</bibl>
+          </cit> et 
+          <ref corresp="#l1-Qlsedlt">
+              <name ref="Jerome">Hieronymus</name>
+          </ref> 
+          quod 
+          <cit>
+              <quote xml:id="l1-Qlsedlt">lex spiritualis est ideo revelatione indiget.</quote>
+              <bibl>S. Hieronymi, <title>Epistola LIII: Ad Paulinum</title> (PL XXII:543); "Lex enim spiritualis est, et revelatione opus est, ut intelligatur, ac revelata facie Dei gloriam contemplemur"</bibl>
+          </cit> 
+          Et in 
+          <ref corresp="#l1-Qrecdlt">
+              <title ref="ps">Psalmo</title>
+          </ref> 
+          <cit>
+              <quote xml:id="l1-Qrecdlt" ana="#ps118_18">revela oculos et 
+                  <app to="#l1-Aetccon">
+                      <lem>considerabo</lem>
+                      <rdg wit="#R #SV">considera</rdg>
+                      <rdg wit="#S">considerata</rdg>
+                      <note xml:lang="en">The reading from witness V is chosen because of its alignment with the version of this verse found in the Vulgate</note>
+                  </app> 
+                  mirabilia de lege tua.
+              </quote>
+              <bibl>Psalm 118 18</bibl>
+          </cit>
+      </p>
+   
+     </div>
+     <div>
+         <head xml:id="l1-Hdcfdcf">
+             <supplied>Difficultates circa fidem</supplied>
+         </head>
+   
+      <p xml:id="l1-shoatd">Sed hic occurrunt arduae difficultates; et primo consideranda est descriptio fidei quam ponit 
+          <ref corresp="#l1-Qfesana">
+              <name ref="#Paul">Apostolus</name>,
+          </ref> scilicet, 
+          <cit>
+              <quote xml:id="l1-Qfesana" ana="#hebr11_1">fides 
+                  <app to="#l1-Afidest">
+                      <lem>est</lem>
+                      <rdg wit="#R" type="om."/>
+                  </app> 
+                  substantia rerum sperandarum, argumentum non apparentium.</quote>
+              <bibl>Hebrews 11:1</bibl>
+          </cit> 
+          Ubi secundum 
+          <ref xml:id="l1-Raippss">
+              <seg>
+                  <name ref="#WilliamOfAuxerre">Altissiodorensis</name> 
+              <app to="#l1-Aaltini">
+                  <lem>in</lem>
+                  <rdg wit="#R #SV #S" type="om."/>
+              </app> 
+              principio suae <title ref="#SummaAurea">Summae</title>
+              </seg>
+              <bibl>Guillelmus Auxerre <title>Summa aurea</title></bibl>
+          </ref> et 
+          <ref xml:id="l1-Rgptfel">
+              <seg>
+                  <name ref="#WilliamOfParis">
+                      <app to="#l1-Aetggui">
+                          <lem>Guillelmum</lem>
+                          <rdg wit="#R">guillelmi</rdg>
+                      </app>
+                      Parisiensis</name> 
+                  tractatu suo
+                  <title ref="#OnFaithAndLaws">De fide et legibus</title>
+              </seg>
+              <bibl>Guillelmus Parisiensis, <title>de fide et legibus</title></bibl>
+          </ref> 
+          sit una comparatio fidei, respectu credendorum, et caritatis, respectu amandorum; unde imaginatur quod sicut caritas dirigit hominem ad diligendum Deum propter se, ita proportionaliter fides inclinat intellectum ad credendum primae veritati propter se et 
+          <app to="#l1-Aetssup">
+              <lem>super</lem>
+              <rdg wit="#V">supra</rdg>
+          </app> 
+          omnia sine alia apparentia. Ideo fides est argumentum, et non est consequens nec conclusio. Ideo sicut inquit <ref corresp="#l1-Qaqbrfr">
+              <name ref="#WilliamOfAuxerre">
+                  <app to="#l1-Ainqgui">
+                      <lem>Guillelmus</lem>
+                      <rdg wit="#V" type="om."/>
+                  </app> 
+                  Altissiodorensis</name>
+          </ref> 
+          <cit>
+              <quote xml:id="l1-Qaqbrfr">a quodam bene dictum est quod apud <name ref="#Aristotle">Aristotelem</name> argumentum est ratio rei dubiae faciens fidem, apud autem Christum 
+                  <app to="#l1-Achrest">
+                      <lem>est</lem>
+                      <rdg wit="#R #SV" type="intext">est</rdg>
+                      <note xml:lang="en">The double "est" in R and SV seems like a clear mistake, though good corroboration of the intimate relationship between these two witnesses.</note>
+                    </app> 
+                  fides faciens rationem.</quote>
+              <bibl>Guillelmus Auxerre, <title ref="#SummaAurea">Summa aurea</title>, prologus. This formulation has been identified by Marie-dominique Chenu as originating with Simon de Tornai; Cf. Chenu, <title>La théologie comme science au XIII siècle</title> (Paris: Vrin, 1942), p. 35; Cf. Simon de Tornai, <title>Expositio in symbolium Quicumque</title>, "Propter hoc dictum est a quodam, quoniam apud Aristotelem argumentum est ratio rei dubiae faciens fidem, apud Christum autem argumentum est fides faciens rationem"</bibl>
+          </cit> 
+          Et hoc videtur esse contra 
+          <ref xml:id="l1-Rapqpap">
+              <seg>
+                  <name ref="#Aureoli">Aureolem</name> prima quaestione Prologi
+                  <app to="#l1-Aproart">
+                    <lem>articulo</lem>
+                    <rdg wit="#V">capitulo</rdg>
+                  </app> primo
+              </seg>
+              <bibl>Aureoli, Prologue, article 1</bibl>
+          </ref>, qui tenet quod articuli fidei sunt conclusiones ex aliis deductae, ad quas 
+          <app to="#l1-Atheset">
+              <lem>processus <cb ed="#S" n="2rb"/> theologicus et</lem>
+              <rdg wit="#V" type="om."/>
+              <note xml:lang="en">While this phrase appears a bit redundant and therefore somewhat understandable that it is omitted by V, we include because it does not hurt the sense and it is supported by R, SV, and S</note>
+          </app> 
+          processus theologici principaliter nituntur concludendas; et non sunt tamquam principia ex quibus alia theologice <app to="#l1-Atheded">
+              <lem>deducuntur.</lem>
+              <rdg wit="#V">deducantur</rdg>
+              <note xml:lang="en">The choice of the subjunctive by V is unclear to us. Thus, follow the indicative reading supported by R, SV, and S</note>
+          </app>
+      </p>
+   
+      <p xml:id="l1-usaafe">
+          <app to="#l1-Afacetc">
+              <lem>Unde secundum 
+              <ref corresp="#l1-Qsfiedp">
+                  <name ref="#Paul">Apostolum</name>
+              </ref>
+              <cit>
+                  <quote xml:id="l1-Qsfiedp" ana="#hebr11_6">sine fide impossibile est Deo placere.</quote>
+                  <bibl><title>Ad Hebraeos</title> 11:6</bibl>
+              </cit> 
+              Ideo in diffinitione bene dicitur: 
+              <cit>
+                <quote xml:id="l1-Qssrana" ana="#hebr11_1">substantia sperandarum
+                    <app to="#l1-Asubspe">
+                          <lem>sperandarum</lem>
+                          <rdg wit="#S">separandarum</rdg>
+                    </app> rerum, argumentum non apparentium.
+                    <app to="#l1-Anonapp">
+                        <lem>apparentium</lem>
+                        <rdg wit="#S">apparentiam</rdg>
+                    </app>
+                </quote>
+                <bibl><title>Ad Hebraeos</title> 11:1</bibl>
+              </cit> 
+              Ideo fides dicitur substantia quia est totius 
+          <cb ed="#R" n="1rb"/> 
+          meriti fundamentum, nam sicut substantia dicitur subiectum accidentium, ita fides dicitur fundamentum omnium 
+          <cb ed="#SV" n="187rb"/> 
+          aliarum veritatum. Ideo dicit 
+          <ref corresp="#l1-Qsfiepd"> 
+              <name ref="#Paul">Apostolus</name>: 
+          </ref> 
+          <cit>
+              <quote xml:id="l1-Qsfiepd" ana="#hebr11_6">sine fide impossibile est placere Deo.</quote>
+              <bibl><title>Ad Hebraeos</title> 11:6</bibl>
+          </cit> 
+          Ideo dicitur 
+          <mentioned>substantia rerum,</mentioned> 
+          non quod sit realiter substantia, immo est quod accidens animae inhaerens, sed sicut substantia dicitur perfectior et nobilior accidente, ita fides dicitur et est nobilior habitus animae infusus, ut tamquam fundamentum, cui aliae virtutes theologicae et cardinales innituntur ut fundamento, quia 
+          <app to="#l1-Aetddir">
+              <lem>regulat et dirigit</lem>
+              <rdg wit="#R" type="corrReplace">
+                  <corr corresp="#l1-Cderred">
+                      <del>dirigit et regulat</del>
+                      <add>regulat et dirigit</add>
+                  </corr>
+              </rdg>
+          </app> 
+          intellectum humanum respectu credendorum ad salutem 
+          <app to="#l1-Asalnec">
+              <lem>necessariorum;</lem>
+              <rdg wit="#SV" type="corrDeletion">
+                  <corr corresp="#l1-Cceicei">
+                      <del rend="expunctuated">concipiendum et intelligendum</del>
+                  </corr>
+              </rdg>
+          </app> 
+          nisi enim quis crediderit salvus esse non poterit. Elevat etiam humanum iudicium ad veritates theologicas concipiendum et intelligendum; nisi enim credideritis, non intelligetis, sicut dicit Christus. Et imaginandum est quod, sicut caritas dirigit hominem ad diligendum Deum propter se finaliter, ita fides similiter inclinat intellectum nostrum ad credendum articulis immediate propter Deum. Dicitur etiam fides 
+          <mentioned>non apparentium</mentioned> 
+          intelligendum quantum est ex parte sui, quia 
+          <app to="#l1-Aquinon">
+              <lem>non</lem>
+              <rdg wit="#SV">nonus</rdg>
+          </app> 
+          <app to="#l1-Anonopo">
+              <lem>oportet</lem>
+              <rdg wit="#R #SV" type="om."/>
+          </app> 
+          quod obiectum fidei sit de 
+          <app to="#l1-Adepper">
+              <lem>per</lem>
+              <rdg wit="#S" type="om."/>
+          </app> 
+          se apparens et evidenter cognitum. Fides enim respectu sui obiecti est quaedam 
+          <app to="#l1-Aquacog">
+              <lem>cognitio</lem>
+              <rdg wit="#S">intellectio</rdg>
+          </app> 
+          aenigmatica. Ideo dicit 
+          <ref corresp="#l1-Qnavfaf">
+              <name ref="#Paul">Apostolus</name>:
+          </ref> 
+          <cit>
+              <quote xml:id="l1-Qnavfaf" ana="#Icor13_12">nunc autem videmus per speculum et in aenigmate, tunc autem faciem ad faciem,</quote>
+              <bibl><title>I Ad Corinthios</title> 13:12</bibl>
+          </cit>
+          etc.</lem>
+          <rdg wit="#V">dicitur in praedicta diffinitione non apparentium, quia non oportet quod subiectum sit apparentium, et de hoc aliquid dicetur</rdg>
+      </app>
+      </p>
+       
+      <p xml:id="l1-uaqriv">
+          <app to="#l1-Aadvquo">
+              <lem>Ubi advertendum quod</lem>
+              <rdg wit="#V">et</rdg>
+          </app> 
+          de hac materia sunt 
+          <app to="#l1-Asuntre">
+              <lem>tres</lem>
+              <rdg wit="#V">quinque</rdg>
+          </app>
+          <app to="#l1-Aartfid">
+              <lem>diversae viae ad imaginandum quomodo quis inducitur ad credendum articulis fidei:</lem>
+              <rdg wit="#V">viae</rdg>
+          </app> 
+          duae extremae et tertia media. 
+          <ref xml:id="l1-Rquesta">
+              <seg>Prima est quae est tacta:</seg>
+              <bibl>Guillelmus Altissiodorensis, Liber Primus, prologus (ad Claras Aquas, I:15, l. 2-3): "Sicut enim vera dilectione diligitur Deus propter seipsum super omnia, ita fide acquiescitur prime veritati super omnia propter se."</bibl>
+          </ref> quod 
+          <app to="#l1-Aquoint">
+              <lem>intellectus</lem>
+              <rdg wit="#R #SV">non</rdg>
+              <note xml:lang="en">This is a pretty clear mistake on the part of R, and though difficult to read, SV seems to follow. If R is a descendedant of SV, then R could read as making a guess where SV was extremely unclear.</note>
+          </app> 
+          per fidem assentit primae veritati propter se sine quacumque apparentia. 
+          <app to="#l1-Aappsec">
+              <lem>Secunda</lem>
+              <rdg wit="#V">quarta via</rdg>
+          </app> 
+          est 
+          <ref xml:id="l1-Reshopr">
+              <seg><name ref="#Holcot">Holcot</name></seg>
+              <bibl>Cf. Holcot, Commentary, prologue</bibl>
+          </ref> 
+          <app to="#l1-Aholpri">
+              <lem>primae</lem>
+              <rdg wit="#V">praedictae</rdg>
+          </app> 
+          extremae contrariatur, scilicet, quod assensus fidei nullo modo generatur, nisi per rationem cogentem intellectum, 
+          <app to="#l1-Anecqua">
+              <lem>non affectatum ad oppositum; et ultra credere articulis non est meritorium, quia non est in libera potestate voluntatis, quia quis ad credendum articulis necessatur
+                  <cb ed="#S" n="2va"/> 
+                  quandoque</lem> 
+              <rdg wit="#V" type="om."/>
+           </app> 
+          Tertia, via media, est quam 
+          <app to="#l1-Aquadet">
+              <lem>determinat</lem>
+              <rdg wit="#V">declarat</rdg>
+          </app> 
+          <ref xml:id="l1-Rdedhqu">
+              <seg><name ref="#Oyta">de Heuta</name></seg>
+              <bibl>Cf. Oyta</bibl>
+          </ref> 
+          quod 
+          <cb ed="#V" n="5vb"/> 
+          requiritur ratio probabilis; non tamen necessitans ad credendum, et ideo cum hoc requiritur imperium voluntatis.</p>
+   
+   
+   <div>
+     <head xml:id="l1-Hpvcfpa">
+         <supplied>Argumenta pro prima via ad imaginandum fidem</supplied>
+     </head>
+     
+    <p xml:id="l1-pveain">
+        <app to="#l1-Ainnnob">
+            <lem>Prima via est <name ref="#WilliamOfAuxerre">Altissiodorensis</name> ponentis quod intellectus adiutus lumine fidei potest assensum articulorum in se causare sine aliqua apparentia extrinseca vel ratione suadente vel inductiva, immo ipsum lumen fidei et intellectus sufficiunt ad causandum assensum articulorum in nobis.</lem>
+            <rdg wit="#V" type="om."/>
+        </app>
+    </p>
+   
+    <p xml:id="l1-pivqep">Prima 
+        <app to="#l1-Apriist">
+            <lem>ista</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        via imaginatur conformiter ad 
+        <ref xml:id="l1-Radddcd">
+            <seg>
+                <app to="#l1-Aadaaug">
+                <lem><name ref="#Augustine">Augustinum</name></lem>
+                <rdg wit="#R #SV">argumentum</rdg>
+            </app> XIIo <title ref="#CityOfGod">de civitate Dei</title>,
+            </seg>
+            <bibl>Augustine, <title>City of God</title>, ??</bibl>
+        </ref> 
+        qui ponit 
+        <app to="#l1-Aponori">
+            <lem>originem</lem>
+            <rdg wit="#R #SV #S"/>
+            <note xml:lang="en">We include the "originem" here because "ponit" clearly demands a direct object which is not supplied in the other witnesses.</note>
+        </app> 
+        duarum civitatum, scilicet, Dei et diaboli, ex parte 
+        <app to="#l1-Aparvol">
+            <lem>voluntatis.</lem>
+            <rdg wit="#V" type="intextu">et</rdg>
+        </app> 
+        Ponit 
+        <ref xml:id="l1-Ribinus">
+            <seg>ibi <name ref="#Augustine">Augustinus</name></seg>
+            <bibl>Augustine, <title>City of God</title> ??</bibl>
+        </ref> 
+        <cb ed="#R" n="1va"/> 
+        quod duo amores 
+        <app to="#l1-Aamofac">
+            <lem>fecerunt</lem>
+            <rdg wit="#R #SV">fecerunt</rdg>
+            <note xml:lang="en">Despite our default preference to follow R and SV, we choose the perfect tense reading, but the SV, S, and V support the use of "fecit" below and only R uses the present facit. Because we think the perfect tense is the best reading below, we are forced to choose the perfect tense reading here as well.</note>
+        </app> 
+        duas civitates: civitatem Dei fecit 
+        <app to="#l1-Adeifec">
+            <lem>fecit</lem>
+            <rdg wit="#R">facit</rdg>
+        </app> 
+        amor Dei usque ad 
+        <app to="#l1-Aadccon">
+            <lem>contemptum</lem>
+            <rdg wit="#V">contentum</rdg>
+        </app> 
+        sui; civitatem diaboli 
+        <app to="#l1-Adiafec">
+            <lem>fecit</lem>
+            <rdg wit="#R #SV #S" type="om."/>
+            <note xml:lang="en">Despite being the only witness to include "fecit" here we choose it because it is the more explicit reading.</note>
+        </app> amor sui usque ad 
+        <app to="#l1-Ausqcon">
+            <lem>contemptum</lem>
+            <rdg wit="#V">contentum</rdg>
+        </app> 
+        Dei. Huiusmodi ergo homines qui talem habent amorem 
+        <cb ed="#SV" n="187va"/> 
+        <app to="#l1-Aergase">
+            <lem>erga se</lem>
+            <rdg wit="#R">ergo</rdg>
+            <rdg wit="#S #SV">erga</rdg>
+            <note xml:lang="en">The meaning of the sentence clealy demands "erga se" over both "ergo" and "erga" and the text means to say "men who have this kind of love toward themselves are all citizens of the city of the devil."</note>
+        </app> 
+        sunt 
+        <app to="#l1-Acivciv">
+            <lem>cives civitatis</lem>
+            <rdg wit="#R #SV #S">omnes</rdg>
+            <note xml:lang="en">Though the sense changes little, the reading in V seems to be not only the clear reading but also the more explicit.</note>
+        </app> 
+        <app to="#l1-Acivdia">
+            <lem>diaboli.</lem>
+            <rdg wit="#R" type="intextu">et</rdg>
+        </app> 
+        <app to="#l1-Apospon">
+            <lem>Consimiliter ponit</lem>
+            <rdg wit="#V">conformiter posset poni</rdg>
+            <note xml:lang="en">We choose the reading from V because with think the imperfect subject use of "posset" is confusing. This is not a contrary to fact assertion, but an indicative claim: "The same can be said about the intellect with respect to truths..."</note>
+        </app> 
+        de intellectu respectu veritatum, quia quaedam sunt veritates commodae intellectui etiam in statu naturae lapsae. Alia autem est 
+        <app to="#l1-Aestver">
+            <lem>veritas</lem>
+            <rdg wit="#R #SV">virtus</rdg>
+            <note xml:lang="en">Both the sense of this sentence and the fact that R, SV and S, V are split make selection difficult. However, given the surrounding context "veritas" seems like the best selection. </note>
+        </app> 
+        ad quam intellectus, seclusis omnibus aliis veritatibus et apparentiis, fertur in illam veritatem, ita quod totaliter seipsum abnegat propter primam veritatem. Et sic erit cuius civitas Dei, sicut dictum est de voluntate, et talis est maxima perfectio ipsius intellectus, scilicet, omnino se negare, sicut credere istam: 'Deus est', quae est prima. </p>
+   
+    <p xml:id="l1-eqsqre">Ex 
+        <app to="#l1-Aexqquo">
+            <lem>quo</lem>
+            <rdg wit="#V">qua</rdg>
+        </app> 
+        statim 
+        <app to="#l1-Astaseq">
+            <lem>sequitur</lem>
+            <rdg wit="#V" type="corrDeletion">
+                <corr corresp="#l1-Cseeoqu">
+                    <del rend="strikethrough">eo</del>
+                </corr>
+            </rdg>
+        </app> 
+        quod remunerator est eo quod 
+        <app to="#l1-Aestete">
+            <lem>bonus est et</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        summe bonus est et eo quod summe diligit creaturam et non summe diligeret nisi remuneraret bene  appetentem, et hoc notavit 
+        <ref corresp="#l1-Qoacqre"><name ref="#Paul">Apostolus</name>,</ref> 
+        dicens quod 
+        <cit>
+            <quote xml:id="l1-Qoacqre" ana="#hebr11_6">oportet accendentem credere quia est, et quia remunerator <app to="#l1-Aremest">
+                <lem>est.</lem>
+                <rdg wit="#V" type="om."/>
+            </app>
+            </quote>
+        <bibl><title>Ad Hebraeos</title> 11:6</bibl>
+        </cit>
+        </p> 
+
+     <div>
+     
+  <head xml:id="l1-Hcorria">
+      <supplied>Corollaria primae viae</supplied>
+  </head>
+    
+      <p xml:id="l1-eqsfss">Ex quibus sequitur primo quod ex rationibus probabilibus non generatur fides; patet quia fides et actus fidei sunt supernaturales.</p>
+     
+      <p xml:id="l1-ssqsdd">Secundo sequitur quod nec rationes evidentes sufficiunt concurrere ad 
+          <app to="#l1-Aadttam">
+              <lem>tam</lem>
+              <rdg wit="#R #SV">eam</rdg>
+              <note xml:lang="en">We think the sentence reads better if "tam" is selected to say: "the production of such a noble habit and assent"</note>
+          </app> 
+          <app to="#l1-Aetaass">
+              <lem>nobilis habitus et assensus</lem>
+              <rdg wit="#V">nobiles actus</rdg>
+              <note xml:lang="en">We think the best reading is one that treats "habitus" and "assensus" as objecitve genitives. Thus while R and SV are seem to be mistaken about "tam" above, here it is V that is mistaken about "nobiles".</note>
+          </app> 
+          productionem. Id est, rationes demonstrativae non possunt causare actum fidei, et ponendum est in claris terminis, quia 
+          <app to="#l1-Aquisac">
+            <lem>Sacra</lem>
+            <rdg wit="#V" type="om."/>
+        </app> Scriptura elucidanda est et non obscuranda iuxta illud, 
+          <cit>
+              <quote xml:id="l1-Qqemvah" ana="#sir24_31">qui elucidant me vitam aeternam habebunt.</quote>
+              <bibl><title>Sirach</title> 24:31</bibl>
+          </cit> 
+          Et si obiciatur de hoc, quod refert 
+          <ref corresp="#l1-Qqvmsoe">
+              <name ref="#Macrobius">Macrobius</name>
+          </ref>: quod 
+          <cit>
+              <quote xml:id="l1-Qqvmsoe">quidam 
+                  <cb ed="#S" n="2vb"/> 
+                  vidit musas
+         poeticas lacrimantes eo quod ea quae scribuntur 
+                  <app to="#l1-Asacscr">
+                        <lem>in Scriptura Sacra scribuntur</lem>
+                        <rdg wit="#R #SV" type="om." cause="homoteleuton"/>
+                        <rdg wit="#V">scribuntur</rdg>
+                      <note xml:lang="en">It seems most likely that R and skipped from the first instance of "scribuntur" to the second and then picked up with "sine ornatu". V support the reading in Sorbonne though it leaves out "in sacra scriptura" and moves the second "scribuntur" to the end of the phrase after "eorum"</note>
+                  </app> sine ornatu earum.</quote>
+              <bibl>Non invenimus adhuc.</bibl>
+          </cit> 
+          Respondendum 
+          <app to="#l1-Aresest">
+              <lem>est</lem>
+              <rdg wit="#R" type="om."/>
+          </app> 
+          quod scientiae, 
+          <cb ed="#V" n="6ra"/> 
+          quae ad superbia 
+          <app to="#l1-Asupind">
+              <lem>inducunt,</lem>
+              <rdg wit="#S">inductione</rdg>
+          </app> 
+          <app to="#l1-Aindsic">
+              <lem>sicut</lem>
+              <rdg wit="#V">cuius</rdg>
+          </app> 
+          sunt scientiae humanitus adinventae, debent tegi verbis, ne omnibus 
+          <app to="#l1-Aomnapp">
+              <lem>appareant.</lem>
+              <rdg wit="#V">pateant</rdg>
+          </app> 
+          Scriptura autem Sacra, quae ad humilitatem inducit, velari non 
+          <app to="#l1-Anondeb">
+              <lem>debet</lem>
+              <rdg wit="#V">debent</rdg>
+              <note xml:lang="en">V seems to treat "scriptura" as plural to keep the parallelism with "scientiae." However, the other three witness treat "scriptura" as singular. Thus we follow them and choose "debet".</note>
+          </app>, sed 
+          <app to="#l1-Aseddeb">
+              <lem>debet</lem>
+              <rdg wit="#V" type="om."/>
+          </app> 
+          declarari.</p>
+     
+      <p xml:id="l1-tsqnee">Tertio sequitur quod lux fidei est 
+          <app to="#l1-Aestsup">
+              <lem>superioris</lem>
+              <rdg wit="#S">superior</rdg>
+          </app> speciei et ex parte sui certior quam tota latitudo omnium rationum 
+          <app to="#l1-Aratnat">
+              <lem>naturalium.</lem>
+              <rdg wit="#S">materialium.</rdg>
+          </app> 
+          Patet 
+          <app to="#l1-Apatqui">
+              <lem>quia,</lem>
+              <rdg wit="#V" type="om."/>
+          </app> 
+          propter propinquitatem quam habet ad summam lucem, ipsa est certior et excellentior quam latitudo tota luminis 
+          <app to="#l1-Alumnat">
+              <lem>naturalis,</lem>
+              <rdg wit="#S">materialis</rdg>
+          </app>
+          <app to="#l1-Anatigi">
+              <lem>et sic rationes probabiles non sufficiunt 
+                <app to="#l1-sufini">
+                    <lem>in</lem>
+                    <rdg wit="#S" type="corrAddition">
+                        <corr corresp="#l1-Csinsin">
+                            <add place="aboveLine">in</add>
+                        </corr>
+                    </rdg>
+                </app> 
+                nobis generare habitum fidei. Ex isto sequitur quod fides 
+                <app to="#l1-Afidexc">
+                    <lem>excedit</lem>
+                    <rdg wit="#R" type="corrReplace">
+                        <corr corresp="#l1-Cexctis">
+                            <add>excedit</add>
+                            <del>exceditis</del>
+                        </corr>
+                    </rdg>
+                </app> 
+          primum principium in firmitate, cum primum principium sit infra latitudinem luminis naturalis, igitur</lem>
+              <rdg wit="#S" type="rep."/>
+              <note xml:lang="en">Here witness S includes the identified lemma, but on completion mistakenly repeats the lemma again.</note>
+          </app>
+      </p>
+   
+      <p xml:id="l1-scoesi">Sed contra, 
+          <app to="#l1-Aconobi">
+              <lem>obicitur</lem>
+              <rdg wit="#V #S">obiceretur</rdg>
+              <note xml:lang="en">We choose to follow R and SV both because this is our default position and because we do not see a reason for the use of the imperfect subjunctive here. The sentence seems to read just find as "To the contrary, it is objected..."</note>
+          </app> 
+          quia prima principia sunt nobis innata et 
+          <app to="#l1-Aetssun">
+              <lem>sunt</lem>
+              <rdg wit="#S">sint</rdg>
+          </app> 
+          evidentissima et fides non sic, ergo in esse 
+          <app to="#l1-Aesscla">
+              <lem>claritatis,</lem>
+              <rdg wit="#SV" type="corrDeletion">
+                  <corr corresp="#l1-Cvidvid">
+                      <del rend="strikethrough">vid</del>
+                  </corr>
+              </rdg>
+          </app> 
+          fides videtur 
+          <cb ed="#R" n="1vb"/> 
+          esse speciei inferioris.</p>
+   
+      <p xml:id="l1-chpnpn">Contra hoc ponitur quartum corollarium, 
+          <app to="#l1-Aimmdic">
+              <lem>iuxta immediate dicta:</lem>
+              <rdg wit="#V" type="om."/>
+          </app> 
+          quod quantum ad hoc, fides excedit primum principium complexum non solum in luce, sed etiam in firmitate. Illud non probatur nunc.</p> 
+   
+      <p xml:id="l1-qsqfrf">Quinto sequitur quod facilius esset dissentire primo principio quam fidei. Istud fundatur primo in supremo modo se 
+          <app to="#l1-Asehhab">
+              <lem>habendi</lem>
+              <rdg wit="#V" type="intextu">illius</rdg>
+              <note xml:lang="en">We choose to leave this out because it does not seem to add anything to the text nor make anything more explicit, and it is not supported in any of the other witnesses</note>
+          </app> 
+          intellectus; 
+          <cb ed="#SV" n="187vb"/> 
+          secunda radix est quia intellectus, adhaerens primae veritati, abnegat seipsum et omnem rationem et sic est 
+          <app to="#l1-Aestimm">
+              <lem>immobilis</lem>
+              <rdg wit="#V">immutabilis</rdg>
+          </app> 
+          quantum ad hoc. Ideo, intellectus sic fide illustratus, 
+          <ref corresp="#l1-Qintvea">secundum 
+              <name ref="#WilliamOfAuxerre">Altissiodorensis</name>,
+          </ref> 
+          potest dicere Samaritanae, id est, rationi humanae, 
+          <cit>
+              <quote xml:id="l1-Qintvea" ana="#io4_42">iam 
+              <app to="#l1-Aiamnon">
+                  <lem>non</lem>
+                  <rdg wit="#R">nota</rdg>
+              </app> 
+              propter te credimus, sed quod 
+              <app to="#l1-Aquoips">
+                  <lem>ipsum</lem>
+                  <rdg wit="#V" type="rep."/>
+                  <note xml:lang="en">V makes a mistake here and repeats "ipsum a second time"</note>
+              </app> 
+              <app to="#l1-Aipsvid">
+                  <lem>vidimus</lem>
+                  <rdg wit="#V" type="corrReplace">
+                    <corr corresp="l1-Cvenvid">
+                        <del rend="strikethrough">vendimus</del> 
+                        <add place="inline">vidimus</add>
+                    </corr>
+                  </rdg>
+              </app> 
+              et audivimus.</quote>
+              <bibl><title>Ioannis</title> 4:42; cf. William of Auxerre</bibl>
+          </cit> 
+          Sed de primo principio possunt adduci rationes sophisticae per quas ligabitur, nec ibi abnegat 
+          <app to="#l1-Aabnomn">
+              <lem>omnem</lem>
+              <rdg wit="#SV" type="corrDeletion">
+                  <corr corresp="#l1-Ccreram">
+                      <del rend="expunctuated">creaturam</del>
+                  </corr>
+              </rdg>
+          </app> 
+          rationem quemadmodum facit 
+          <app to="#l1-Afacres">
+              <lem>respectu</lem>
+              <rdg wit="#V">ratione</rdg>
+          </app> 
+          fidei.</p>
+   
+      <p xml:id="l1-eqsosp">Ex quo sequitur 
+          <app to="#l1-Aseqsex">
+              <lem>sexto:</lem>
+              <rdg wit="#V" type="om."/>
+              <rdg wit="#S">quinto</rdg>
+          </app> 
+          quod adhaesio fidei tollit omne 
+          <cb ed="#S" n="3ra"/> 
+          sophisticum periculum.</p>
+   
+      <p xml:id="l1-ssqper">Septimo 
+          <app to="#l1-Asepseq">
+              <lem>sequitur</lem>
+              <rdg wit="#SV" type="intextu">videtur</rdg>
+          </app> 
+          quod rationes tam pro se quam contra se 
+          <app to="#l1-Aseccon">
+              <lem>contemnit,</lem>
+              <rdg wit="#S" type="om."/>
+          </app>
+          <app to="#l1-Aconses">
+            <lem>
+                <app to="#l1-Aconnen">
+                    <lem>ne</lem>
+                    <rdg wit="#V">quantum est ad hoc ut</rdg>
+                    <rdg wit="#SV">pro se ne</rdg>
+                </app> 
+            per 
+                <app to="#l1-Apereas">
+                    <lem>eas</lem>
+                    <rdg wit="#R #SV">ea</rdg>
+                    <note xml:lang="en">We choose this reading because we read the antecedent as "rationes" which is feminine.</note>
+                </app> 
+                <app to="#l1-Aeasqua">
+                    <lem>quae</lem>
+                    <rdg wit="#V" type="om."/>
+                </app> 
+            credat -- quod alias variarent habitum creditum 
+                <app>
+                    <lem>contra se,</lem>
+                    <rdg wit="#V" type="om."/>
+                </app>
+            </lem> 
+            <rdg wit="#S" type="om."/>
+         </app>
+          <app to="#l1-Aeasred">
+              <lem>ne per eas 
+                  <app to="#l1-Apeeare">
+                      <lem>reducatur.</lem>
+                      <rdg wit="#S">seducatur</rdg>
+                  </app>
+              </lem>
+              <rdg wit="#V" type="om."/>
+          </app>
+      </p>
+   
+      <p xml:id="l1-osqrnr">Octavo sequitur quod fides quantum est de se omnem rationem naturalem repudiat.</p>
+         
+     </div>
+   </div>
+   <div>
+     <head xml:id="l1-Hoapaer">
+         <supplied>Obiectio ad primam viam ad imaginandum fidem et responsio Petri Plaoul</supplied>
+     </head>
+     
+    <p xml:id="l1-ctindr">Contra tamen istud obicitur, quia tunc doctores et sancti peccarent, quia, pro fide 
+        <app to="#l1-Afiddef">
+            <lem>defensione,</lem>
+            <rdg wit="#S">deffectione</rdg>
+        </app> 
+        <app to="#l1-Amulfec">
+            <lem>multas fecerunt</lem>
+            <rdg wit="#V">multum faciunt</rdg>
+        </app> 
+        rationes, sicut 
+        <app to="#l1-Asicpat">
+            <lem>patet</lem>
+            <rdg wit="#R" type="om."/>
+        </app> 
+        in 
+        <cb ed="#V" n="6rb"/> 
+        <ref xml:id="l1-Rilsils">
+            <seg>isto libro <title ref="#Sentences">Sententiarum</title></seg>
+            <bibl>Lombard, <title>Sentences</title> I</bibl>
+        </ref> 
+        et aliis libris doctorum. 
+        <app to="#l1-Adefrob">
+            <lem>Unde dicit 
+            <ref corresp="#l1-Qstendr">
+                <name ref="#Augustine">Augustinus</name>
+            </ref> quod 
+            <cit>
+                <quote xml:id="l1-Qstendr" ana="#AugDeTrin14_1-a">scientia theologiae et Sacrae Scripturae est saluberrima,
+             quae fides gignitur, nutritur, defenditur, roboratur.</quote>
+                <bibl><name ref="#Augustine">Augustinus</name> <title ref="#deTrinitate">De Trinitate</title> XIV, c. 1</bibl>
+            </cit>
+            </lem>
+            <rdg wit="#V" type="om."/>
+        </app>
+        </p>
+   
+    <p xml:id="l1-rahrah">
+        <app to="#l1-Aresdeo">
+            <lem>Respondeo</lem>
+            <rdg wit="#V">respondetur</rdg>
+        </app> 
+        <app to="#l1-Aadhhoc">
+            <lem>ad hoc:</lem>
+            <rdg wit="#V" type="om."/>
+        </app>
+    </p>
+     
+    <p xml:id="l1-qrpcdi"><supplied>Primo</supplied> quod rationes probabiles 
+        <app to="#l1-Apromul">
+            <lem>multipliciter</lem>
+            <rdg wit="#V">multum</rdg>
+        </app> 
+        <app to="#l1-Amulval">
+            <lem>valent,</lem>
+            <rdg wit="#R #SV">unde</rdg>
+            <note xml:lang="en">R and SV seem a little confused here. The best reading seems to be "probable reasons do many things well." The "unde" which appear quite clearly in the text could be a corruption of "bene" which is closer to the sense of "valent." But the "valent" is clearly the best reading as it offers a much needed verb to the opening clause.</note>
+        </app> 
+        non tamen ad fidei generationem, quia rationes tales sunt propter 
+        <app to="#l1-Aalirat">
+            <lem>alias rationes,</lem>
+            <rdg wit="#V">alia</rdg>
+        </app> 
+        quae possent fieri ex 
+        <app to="#l1-Aexiins">
+            <lem>
+                <supplied reason="error">insulto</supplied></lem>
+            <rdg wit="#R #V #S #SV">insultu</rdg>
+            <note xml:lang="en">All witnesses clearly write "insultu" but this is not a word. "insulto" is the proper ablative for insultus</note>
+        </app> 
+        diaboli. 
+        <app to="#l1-Adiains">
+            <lem>Ideo valent contra diaboli insultum.</lem>
+            <rdg wit="#V" type="om."/>
+        </app>
+    </p>
+     
+    <p xml:id="l1-senpht">Secundo, ex naturali dispositione hominis post lapsum, vires 
+        <app to="#l1-Avireiu">
+            <lem>eius</lem>
+            <rdg wit="#S">eum</rdg>
+        </app> sensitivae sunt variae. Ideo veniunt multae cogitationes et 
+        <app to="#l1-Aetmmul">
+            <lem>multa</lem>
+            <rdg wit="#R #SV #S" type="om."/>
+            <note xml:lang="en">We choose to include as part of preference for the more explicit reading. We think it helps make the sense slightly clearer.</note>
+        </app> 
+        phantasmata contra fidem; rationes autem probabiles hoc tollunt.</p>
+     
+    <p xml:id="l1-tvaaec">
+        <app to="#l1-Aterval">
+            <lem>Tertio valent</lem>
+            <rdg wit="#V">primo</rdg>
+        </app> 
+        ad reflectendum contra haereticos et gentiles rationes suas et 
+        <app to="#l1-Asuaete">
+            <lem>et</lem>
+            <rdg wit="#S">in</rdg>
+        </app> 
+        <app to="#l1-Aetrrem">
+            <lem>removendo</lem>
+            <rdg wit="#V">rememorando</rdg>
+        </app> 
+        <app to="#l1-Aremeor">
+            <lem>eorum</lem>
+            <rdg wit="#V">earum</rdg>
+            <note xml:lang="en">We choose "eorum" because we see the antecedent as the "haereticos et gentiles" previously mentioned</note>
+        </app> 
+        fallacias et ad eos 
+        <app to="#l1-Aeoscon">
+            <lem>convincendum.</lem>
+            <rdg wit="#V">convertendum</rdg>
+        </app>
+    </p>
+     
+    <p xml:id="l1-qpehio">Quarto possunt esse tales rationes quod inclinabunt ad 
+        <app to="#l1-Aadaass">
+        <lem>assentiendum</lem>
+            <rdg wit="#S" type="corrReplace">
+                <corr corresp="#l1-Cassdum">
+                    <add>assentiendum</add>
+                    <del>ssentiendum</del>
+                </corr>
+            </rdg>
+        </app> 
+        firmiter 
+        <app to="#l1-Afirart">
+            <lem>articulis</lem>
+            <rdg wit="#S">articulos</rdg>
+            <note xml:lang="en">With the dative "articulis" is more fitting with the use of "assentiendum" than the accusative "articulos"</note>
+        </app> 
+        fidei, <app to="#l1-Ahabtal">
+            <lem>quia ex illis potest generari habitus qui inclinabit ad assentiendum articulis. Tamen talis habens habitum talem,</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        <app to="#l1-Ahabfid">
+            <lem>non habens tamen infusum habitum fidei,</lem>
+            <rdg wit="#V">non tamen haberet fidem et sic tales</rdg>
+        </app> 
+        non 
+        <app to="#l1-Aessfid">
+            <lem>esset fidelis,</lem>
+            <rdg wit="#V">essent fideles</rdg>
+            <note xml:lang="en">The singular is better here given the singular verbs and participles used immediately before (e.g. "habens")</note> 
+                    </app> 
+        nec etiam 
+        <app to="#l1-Aetihab">
+            <lem>haberet</lem>
+            <rdg wit="#V">haberent</rdg>
+        </app> 
+        habitum infidelitatis oppositum.</p>
+     
+    <p xml:id="l1-qqsdai">Quinto quia sunt manuductivae ad fidem aliqualiter 
+        <app to="#l1-Aaliete">
+            <lem>et</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        dispositivae ad ipsam.</p>     
+     
+    <p xml:id="l1-spciaf">
+        <app to="#l1-Asexxto">
+            <lem>Sexto</lem>
+            <rdg wit="#S">quinto</rdg>
+        </app> 
+        pie credendo per
+        <app to="#l1-Atalrat">
+            <lem>
+                <app to="#l1-Acreper">
+                <lem>per</lem>
+                <rdg wit="#S">quod</rdg>
+                </app> 
+            tales rationes,</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        verisimile est quod Deus suppleat residuum ex quo homo facit diligentiam in acquirendo fidem.</p>
+     
+    <p xml:id="l1-ssqfes">
+        <cb ed="#R" n="2ra"/> 
+        Septimo staret quod quis crederet primo propter rationem, 
+        <app to="#l1-Aratpos">
+            <lem>postea</lem>
+            <rdg wit="#V" type="intextu">vero</rdg>
+        </app> 
+        <app to="#l1-Apospro">
+            <lem>propter</lem>
+            <rdg wit="#V">per</rdg>
+        </app> 
+        fidem, sicut stat quod aliquis incipiat aliquid habendo respectum ad malum finem et tandem continuando 
+        <app to="#l1-Aconhab">
+            <lem>haberet</lem>
+            <rdg wit="#V">habebit</rdg>
+            <note xml:lang="en">This selection is difficult given the mix of tenses that proceed it. The imperfect subjunctive "crederet" suggests continuing to use the imperfect subjective as part of the contrary to fact conditional. But the present subjunctive "incipiat" suggest something like a mix of the "future more vivid" and "future less vivid." In the end we choose "haberet" since it is supported by more witnesses.</note>
+                    </app> 
+        respectum ad bonum finem. Sicut patet de 
+        <app to="#l1-Adeeeun">
+            <lem>eundo</lem>
+            <rdg wit="#V">eunte</rdg>
+        </app> 
+        ad ecclesiam pro lucrando distributiones, 
+        <cb ed="#S" n="3rb"/> 
+        qui postea 
+        <app to="#l1-Aerrdim">
+            <lem>esset ibi propter Deum, ut si aliquis canonicus vadat ad ecclesiam ea <cb ed="#SV" n="188ra"/> 
+        sola intentione vel affectione ut distributiones suas recipiat; et licet ista affectio non sit meritoria, tamen virtute illius inductionis ad eundum ad ecclesiam, dum ibit vel dum erit 
+           <app to="#l1-Aeriibi">
+               <lem>ibi</lem>
+               <rdg wit="#R" type="om."/>
+           </app> in ecclesia, potest habere 
+           <app to="#l1-Ahabrec">
+               <lem>rectam</lem>
+               <rdg wit="#R">causam</rdg>
+           </app> 
+        intentionem, ut ibi sit et maneat, non propter distributiones (licet propter eas venerit), sed ut divinum servitium cum devotione audiat vel ibi oret vel matutinas cum aliis cum devotione decantet. Et ista possunt esse meritoria, licet principaliter, dum venerit, hoc <supplied reason="sense">non</supplied> intenderet. Et sic rationes sunt manuductivae ad credendum et consequenter ad errorem diminuendum,</lem>
+            <rdg wit="#V">cantat et est in devotione propter Deum</rdg>
+        </app> 
+        sicut est de pagano qui converteretur ad fidem 
+        <app to="#l1-Afidpro">
+            <lem>propter</lem>
+            <rdg wit="#V" type="intextu">aliquod</rdg>
+        </app> 
+        bonum temporale et postea Deo crederet propter 
+        <app to="#l1-Aprosei">
+            <lem>seipsum.</lem>
+            <rdg wit="#V">ipsum</rdg>
+        </app> 
+        <app to="#l1-Acirocc">
+            <lem>Sic etiam rationes probabiles sunt manuductivae ad credendum alicui articulo, postea poterit talis percipere quod non propter rationes vel apparentias est credendum, sed mere libere non 
+            <app to="#l1-Anonint">
+                <lem>intendendo</lem>
+                <rdg wit="#S">intendo</rdg>
+            </app> 
+        rationi humanae, et sic credendo mereretur, 
+            <app to="#l1-Amerali">
+                <lem>alias</lem>
+                <rdg wit="#S">vel</rdg>
+            </app> 
+        non. 
+        Iuxta idem, 
+            <app to="#l1-Aiuxide">
+                <lem>idem</lem>
+                <rdg wit="#S">illud</rdg>
+            </app> 
+        fides non habet meritum 
+            <app to="#l1-Amercui">
+                <lem>cui</lem>
+                <rdg wit="#R">ubi</rdg>
+                <note xml:lang="en">While the difference is slight, "cui" is supported by two witness SV and S, while "ubi" is only supported by R.</note>
+            </app> 
+        humana ratio praebet experimentum; sic forsan postea fideliter credet, non tamen propter rationes, ut li <mentioned>propter</mentioned> dicit circumstantiam causae efficientis; bene tamen si li <mentioned>propter</mentioned> dicit circumstantiam occasionis.</lem>
+            <rdg wit="#V" type="om."/>
+        </app>
+    </p>
+     
+    <p xml:id="l1-ivafes">
+        <app to="#l1-Alumsup">
+            <lem>Item, <supplied>octavo</supplied>, valent ad infirmitatem humani ingenii sanandam quod quid ingenium propter peccatum culpae originalis depressum est et volneratum; et roborandum relevandum est per luminem supernaturale.</lem>
+            <rdg wit="#V" type="om."/>
+        </app>
+    </p> 
+       
+    <p xml:id="l1-pirfes">Propter 
+        <app to="#l1-Aproist">
+            <lem>istas</lem>
+            <rdg wit="#V">praedictas</rdg>
+        </app> 
+        rationes, non in merito, 
+        <app to="#l1-Amerpra">
+            <lem>praecipit</lem>
+            <rdg wit="#V">procedit</rdg>
+        </app> 
+        <ref corresp="#l1-Qpsofes"><name ref="#Paul">Apostolus Petrus</name></ref> 
+        specialiter 
+        <app to="#l1-Aspepra">
+            <lem>praelatis:</lem>
+            <rdg wit="#R">clericis</rdg>
+            <note xml:lang="en">Since the meaning is more or less the same and R and SV differ on this reading, we choose the reading supported by the most witnesses</note>
+        </app> ut: 
+        <cit>
+            <quote xml:id="l1-Qpsofes" ana="#Ipetr3_15">parati sint omni poscenti reddere rationem de ea quae in eis est fide et spe.</quote>
+            <bibl>I Petrus 3:15</bibl>
+        </cit>
+    </p>
+     
+     </div>
+     
+     <div>
+      <head xml:id="l1-Hacacac">
+          <supplied>Aliqua conclusiones</supplied>
+      </head>
+   
+       <div>
+           <head xml:id="l1-Hpcpcpc">
+               <supplied>Prima conclusio</supplied>
+           </head>
+       
+        <p xml:id="l1-equeri">Ex quibus ultra sequitur quod: fides est proprie sanitas intellectus, sicut peccatum 
+            <app to="#l1-Apecfui">
+                <lem>fuit</lem>
+                <rdg wit="#V">est</rdg>
+            </app> 
+            <app to="#l1-Amorips">
+                <lem>morbus ipsius.</lem>
+                <rdg wit="#SV">morbum ipsius.</rdg>
+                <rdg wit="#S">morbus ipsum.</rdg>
+                <rdg wit="#V">morbum ipsius</rdg>
+                <note xml:lang="en">Since there is no consensus here we have chosen the reading suggested by R. We see "morbus" as a predicative nominative describing "peccatum," thus it should be in the nominative case. Likewise, we prefer ipsius over ipsum because besides the fact that "ipsum" does not match the nominative masculine form of "morbus," it also makes better sense to see it as a pronoun for "intellectus" rather an intensifier of "morbus"</note>
+            </app> 
+            Per peccatum enim fuit non solum voluntas 
+            <app to="#l1-Avolvol">
+                <lem>volnerata,</lem>
+                <rdg wit="#V">viciata</rdg>
+            </app> 
+            sed etiam intellectus; per fidem autem sanatur intellectus, sicut voluntas per caritatem. Ideo est dura 
+            <cb ed="#V" n="6va"/> 
+            a principio. Unde et apostolis dura fuit, dicebant enim: 
+            <cit>
+                <quote xml:id="l1-Qdehpea" ana="#io6_60">Durus est hic sermo et 
+                    <app to="#l1-Aetqqui">
+                        <lem>quis</lem>
+                        <rdg wit="#V">qui</rdg>
+                    </app> potest eum audire?</quote>
+                <bibl>Iohannes 6:60</bibl>
+            </cit> 
+            Et 
+            <app to="#l1-Aetrrat">
+                <lem>ratio</lem>
+                <rdg wit="#V">ideo</rdg>
+            </app> 
+            est 
+            <cb ed="#S" n="3va"/> 
+            quia dividit animam a corporibus elevando eam usque ad 
+            <app to="#l1-Acontum">
+                <lem>contemptum</lem>
+                <rdg wit="#V">contentum</rdg>
+            </app> 
+            sui. Unde 
+            <ref><name ref="#Paul">Apostolus</name>:</ref> 
+            <cit>
+                <quote xml:id="l1-Qveeoga" ana="#hebr4_12">Vivus et efficax est sermo Dei et penetrabilior omni gladio 
+                    <app to="#l1-Aglaanc">
+                        <lem>ancipiti.</lem>
+                        <rdg wit="#R #S #SV">ancipiter.</rdg>
+                        <note xml:lang="en">We choose the V reading beacuse is closer to the version of this first found in the Vulgate.</note>
+                    </app>
+                </quote> 
+                <bibl>Ad Hebraeos 4:12</bibl>
+            </cit> 
+            <app to="#l1-Arobint">
+                <lem>Unde sicut 
+                <cb ed="#R" n="1vb"/> 
+                potio amara videtur dura et amara in principio aegrotanti, in fine tamen est sana, sic fides; nam in principio durum videtur credere articulis 
+                    <app to="#l1-Ainffin">
+                        <lem>eam intuentibus, in fine</lem>
+                        <rdg wit="#S">causa inevidentibus</rdg>
+                    </app> 
+                tamen fides fortificat et roborat intellectum.</lem>
+                <rdg wit="#V" type="om."/>
+            </app>
+        </p>
+       </div>
+   
+       <div>
+           <head xml:id="l1-Hscscsc">
+               <supplied>Secunda conclusio</supplied>
+           </head>
+     
+        <p xml:id="l1-acfefv">Alia conclusio: 
+            <app to="#l1-Aconfid">
+                <lem>fides</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            non solum est meritoria, 
+            <app to="#l1-Amerimm">
+                <lem>immo</lem>
+                <rdg wit="#V">sed</rdg>
+            </app> 
+            formaliter est meritum. Quod sit 
+            <cb ed="#SV" n="188rb"/> 
+            meritoria ab omnibus conceditur. Quod sit 
+            <app to="#l1-Asitfor">
+                <lem>formaliter</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            meritum patet, 
+            <app to="#l1-Asitmer">
+                <lem>licet credere sit ex parte actus intellectus ut declarabo. Patet ergo quod fides sit meritum</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            <ref corresp="#l1-Qacesai">
+                <app to="#l1-Aperapo">
+                    <lem>per <name ref="#Paul">Apostolum</name>:</lem>
+                    <rdg wit="#R #SV #S" type="om."/>
+                    <note xml:lang="en">Though it only appears in the V witness, we include it because of our preference for the more explicit reading.</note>
+                </app>
+            </ref>
+            <cit>
+                <quote xml:id="l1-Qacesai" ana="#rom4_3"><name ref="#Abraham">Abraham</name> credidit et reputatum est 
+                    <app to="#l1-Aestsib">
+                        <lem>sibi</lem>
+                        <rdg wit="#V" type="om."/>
+                    </app> 
+                    ad iustitiam,</quote>
+                <bibl>Ad Romanos 4:3</bibl>
+            </cit> 
+            et 
+            <ref corresp="#l1-Qiefefv"><title ref="#hab">Habacuc</title>:</ref>
+            <cit>
+                <quote xml:id="l1-Qiefefv" ana="#hab2_4">iustus ex fide vivit.</quote>
+                <bibl><title>Prophetia Habacuc</title> 2:4</bibl>
+            </cit>
+        </p>
+               
+        <p xml:id="l1-pqeqra">Pro quo 
+            <app to="#l1-Aquoest">
+                <lem>est</lem>
+                <rdg wit="#R #S #SV" type="om."/>
+            </app> 
+            notandum quod cum eadem res sit intellectus et voluntas omnino, tamen alius est actus per quem anima dicitur intellectus, 
+            <app to="#l1-Asciint">
+                <lem>scilicet intellectio,</lem>
+                <rdg wit="#R #SV #S" type="om."/>
+            </app> 
+            et alius 
+            <app to="#l1-Aaliper">
+                <lem>per</lem>
+                <rdg wit="#S" type="intextu">quae</rdg>
+            </app> 
+            quem dicitur voluntas, scilicet, volitio. Ideo tres possunt distingui actus in anima: quiddam sunt cognitivi solum, ut intellectiones; quiddam appetivi solum, ut volitiones; quiddam vero mixti ex praedictis et in talibus consistit fides, caritas, et spes et eorum actus. Unde sicut actus caritatis est actus voluntatis, 
+            <app to="#l1-Avolete">
+                <lem>et</lem>
+                <rdg wit="#V" type="om."/>
+            </app> tamen est 
+            <app to="#l1-Aestquo">
+                <lem>quodammodo</lem>
+                <rdg wit="#V">quaedam</rdg>
+            </app> 
+            perceptio obiecti et sic pertinet ad intellectum, principalius tamen ad voluntatem, 
+            <app to="#l1-Aadvvol">
+                <lem>sic e converso, principalius fides pertinet et est actus intellectus, etiam pertinet ad voluntatem.</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            Et ideo sicut creatura obligatur ad actus caritatis, ita ad actus fidei. Et sicut per diligere meretur debito modo 
+            <app to="#l1-Amoddil">
+                <lem>diligendo,</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            sic 
+            <app to="#l1-Asiceti">
+                <lem>etiam</lem>
+                <rdg wit="#R #SV #S" type="om."/>
+            </app> 
+            per credere debito modo meretur, et hoc concordat dictis 
+            <ref corresp="#l1-Qcphcnv"><name ref="#Augustine">Augustini</name></ref> 
+            dicentis: 
+            <cit>
+                <quote xml:id="l1-Qcphcnv">Cetera potest homo 
+                    <app to="#l1-Anisvol">
+                        <lem>nolens, credere non nisi volens.</lem>
+                        <rdg wit="#V">volens credere aut non ut volens</rdg>
+                    </app>
+                </quote>
+                <bibl><name ref="#Augustine">Augustinus</name>, <title ref="#HomiliesOnJohn">Tractatus XXVI in Ioannem</title>, 2</bibl>
+            </cit>
+         Item, sicut unum crescit, sic et reliquum nec videtur plus repugnare 
+            <app to="#l1-Arepaug">
+                <lem>augmentatio</lem>
+                <rdg wit="#V">augmentari</rdg>
+            </app> 
+            intellectiva respectu unius quam respectu alterius.</p>
+       
+       
+   <div>
+    <head xml:id="l1-Hoatcer">
+        <supplied>Obiectio et responsio</supplied>
+    </head>
+     
+    <p xml:id="l1-scosec">Sed contra obiceretur bene apparenter quia in daemonibus est fides, 
+        <app to="#l1-Afidqui">
+            <lem>quia</lem>
+            <rdg wit="#V">qui</rdg>
+            <rdg wit="#S" type="corrDeletion">
+                <corr xml:id="l1-Cquouod">
+                    <del rend="strikethrough">quod</del>
+                </corr>
+            </rdg>
+        </app>
+        <cit>
+            <quote xml:id="l1-Qceccec" ana="#iac2_19">credunt et contremiscunt,</quote>
+            <bibl>Iacobus 2:19</bibl>
+        </cit> 
+        et tamen non habent caritatem, ergo etc. Item 
+        <ref corresp="#l1-Qfsoome">
+            <app to="#l1-Aiteiac">
+                <lem><name ref="#James">Iacobus</name></lem>
+                <rdg wit="#SV">Iacobum</rdg>
+            </app>
+        </ref>
+         dicit quod: 
+        <cit>
+            <quote xml:id="l1-Qfsoome" ana="#iac2_17">fides 
+                <cb ed="#S" n="3vb"/> 
+                sine operibus mortua est,</quote>
+            <bibl>Iacobus 2:17</bibl>
+        </cit> 
+        ergo non vivificat ex se. Item 
+        <ref corresp="#l1-Qshohns"><name ref="#Paul">Apostolus</name></ref> dicit: 
+        <cit>
+            <quote xml:id="l1-Qshohns" ana="#Icor13_2">si habuero 
+            <app to="#l1-Ahabomn">
+                <lem>omnem</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            fidem, ita ut montes transferam, caritatem autem non 
+            <app to="#l1-Anonhab">
+                <lem>habuero,</lem>
+                <rdg wit="#V">habens</rdg>
+            </app> nihil sum,</quote>
+            <bibl><title>1 Ad Corinthios</title> 13:2</bibl>
+        </cit> 
+        ergo contradictam.</p>
+     
+    <p xml:id="l1-airqip">Ad ista respondetur sine temeraria assertione. Primo imaginando duplicem fidem; unam acquisitam 
+        <cb ed="#V" n="6vb"/> 
+        per rationes humanas et forte 
+        <app to="#l1-Aforder">
+            <lem>derelictam</lem>
+            <rdg wit="#R #SV #S">derelicta</rdg>
+        </app> 
+        ex actibus credendi. Et ista staret cum peccato, sicut in simili ponimus de caritate acquisita; cum 
+        <app to="#l1-Acumeni">
+            <lem>enim</lem>
+            <rdg wit="#V">autem</rdg>
+        </app> 
+        quis 
+        <app to="#l1-Aquipec">
+            <lem>peccat</lem>
+            <rdg wit="#V" type="intextu">et</rdg>
+        </app> 
+        prius 
+        <app to="#l1-Apriaut">
+            <lem>autem</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        <app to="#l1-Aautdil">
+            <lem>dilexerit</lem>
+            <rdg wit="#S">dilexit</rdg>
+        </app> 
+        Deum caritative, se sentit pronum adhuc ad diligendum Deum et ista 
+        <app to="#l1-Aistpro">
+            <lem>pronitas</lem>
+            <rdg wit="#V">caritas</rdg>
+        </app> 
+        non provenit ex caritate infusa, quia non stat cum peccato, sed ex caritate acquisita. Et talis fides bene est in daemonibus, et de ista 
+        <cb ed="#R" n="2va"/> 
+        possunt intelligi auctoritates praedictae. Alia 
+        <app to="#l1-Aaliver">
+            <lem>vero</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        est fides infusa, de qua intelligebantur praedicta.</p>
+     
+    <p xml:id="l1-ampeno">Alio modo
+         potest 
+        <app to="#l1-Apotres">
+            <lem>responderi</lem>
+            <rdg wit="#V">tripliciter</rdg>
+        </app> 
+        imaginando quod fides multiplicem habet habitudinem ad suum subiectum; 
+        <app to="#l1-Aaliinh">
+            <lem>aliam inhaerendi,</lem>
+            <rdg wit="#V" type="om."/>
+        </app> 
+        aliam, scilicet, 
+        <app to="#l1-Asciaff">
+            <lem>afficiendi,</lem>
+            <rdg wit="#V">assentiendi</rdg>
+        </app> 
+        et aliam repraesentandi. Et 
+        <app to="#l1-Arepete">
+            <lem>et</lem>
+            <rdg wit="#S" type="om."/>
+        </app> 
+        <app to="#l1-Atundic">
+            <lem>
+                <app to="#l1-Acnutte">
+                    <lem>tunc</lem>
+                    <rdg wit="#SV" type="corrDeletion">
+                        <corr xml:id="l1-Cindfme">
+                            <del rend="vacat/expunctated">indignitatis creaturae auffert duas secundas habitudines et non primam et sic illa et sic illa fides mortua est</del>
+                        </corr>
+                    </rdg>
+                </app> 
+                diceretur</lem>
+            <rdg wit="#V">sic dicendum est</rdg>
+        </app>
+        quod 
+        <app to="#l1-Aquopos">
+            <lem>possibile</lem>
+            <rdg wit="#V">impossibile</rdg>
+        </app> 
+        est absolute stare primam habitudinem aliis duabus 
+        <app to="#l1-Aduasub">
+            <lem>subtractis,</lem>
+            <rdg wit="#V">abstractis</rdg>
+        </app> 
+        quia diceretur quod Deus, ratione indignitatis creaturae, 
+        <app to="#l1-Acreauf">
+            <lem>aufert</lem>
+            <rdg wit="#V">auferret</rdg>
+        </app> 
+        duas secundas habitudines et non prima. Et sic illa fides mortua est, quia non exit in operationes 
+        <app to="#l1-Aopesua">
+            <lem>suas</lem>
+            <rdg wit="#V">sibi</rdg>
+        </app> 
+        proprias; 
+        <cb ed="#SV" n="188rb"/> 
+        res autem dicitur mortua quando in proprias operationes exire non potest, ita quod Deus non vellet concurrere ad eius nobiles operationes.</p>
+   
+   </div>
+       
+    <div>     
+  
+       <head xml:id="l1-Hdddddd">
+           <supplied>Duas difficultates de merito fidei</supplied>
+       </head>
+       
+     <p xml:id="l1-strefm">Sed tunc restat difficultas, quia obiectum intellectus est verum vel apparens verum, igitur non fertur, nisi in tale. Secundo, intellectus realiter non est liber, vel saltem eius operatio non est immediate libera, igitur non est formaliter meritum.</p>
+  
+     <p xml:id="l1-qailaa">Quantum ad istud secundum, de liberate, non esset impossibile, quia agentia naturalia haberent instinctum naturalem libertatis excepta cognitione. 
+         <app to="#l1-Acogund">
+             <lem>Unde</lem>
+             <rdg wit="#V">una</rdg>
+         </app> 
+         de igne respectu stuppae potest Deus instituere quod omnibus extrinsecis 
+         <app to="#l1-Aextomn">
+             <lem>omnino</lem>
+             <rdg wit="#V" type="om."/>
+         </app> 
+         se habentibus eodem modo 
+         <app to="#l1-Amodpos">
+             <lem>posset</lem>
+             <rdg wit="#S">potest</rdg>
+         </app> 
+         comburere 
+         <app to="#l1-Acomvel">
+             <lem>vel</lem>
+             <rdg wit="#V">et</rdg>
+         </app> 
+         non comburere. Alio modo diceretur quod actus, qui simul est cognitio et quaedam affectio, 
+         <cb ed="#S" n="4ra"/> 
+         potest produci libere ab anima.</p>
+  
+     <p xml:id="l1-apaeis">Ad primum autem argumentum quod tangit de apparentia obiecti respectu intellectus, in quo est difficultas, dicendum 
+         <app to="#l1-Adicest">
+             <lem>est</lem>
+             <rdg wit="#S" type="om."/>
+         </app> 
+         quod habitus fidei nedum elevat potentiam intellectivam 
+         <cb ed="#V" n="7ra"/> 
+         ad credendum, sed multipliciter fortificat ipsam respectu quarumcumque veritatum, quia 
+         <app to="#l1-Acumpot">
+             <lem>cum potentia</lem>
+             <rdg wit="#S">compositio</rdg>
+         </app> 
+         habet dispositionem 
+         <app to="#l1-Adiscon">
+            <lem>convenientem,</lem>
+             <rdg wit="#V">convenientissimam</rdg>
+         </app> 
+         redditur fortior ad suas operationes exercendas, sicut videmus in elementis et 
+         <app to="#l1-Aalient">
+             <lem>in aliis entibus</lem>
+             <rdg wit="#R #SV #S">aliis</rdg>
+             <note xml:lang="en">Here we show our preference for the more explicit reading</note>
+         </app> 
+         naturalibus. Modo, fides est 
+         <app to="#l1-Aestcon">
+             <lem>convenientissima</lem>
+             <rdg wit="#V" type="intextu">ipsi</rdg>
+         </app> 
+         intellectui et tollit dispositionem 
+         <app to="#l1-Adismai">
+             <lem>contrarium.</lem>
+             <rdg wit="#S" type="om.">
+                 <space extent="oneWordLength"/>
+             </rdg>
+             <rdg wit="#R #SV">gradus.</rdg>
+         </app> 
+         <app to="#l1-Aconide">
+             <lem>Ideo</lem>
+             <rdg wit="#V">Et ideo</rdg>
+         </app> 
+         per fidem, intellectus est vigorosior quam sine fide, et in isto facit fides rationes de se tantum probabiles 
+         <app to="#l1-Aessqua">
+             <lem>esse quasi</lem>
+             <rdg wit="#R #SV">quia</rdg>
+             <rdg wit="#S">quod</rdg>
+             <note xml:lang="en">V's reading is preferable because the use of "quasi" helps us to see that faith makes probable reasons to be like or "as if" demonstrative.</note>
+         </app> 
+         demonstrativas, quia fides est intellectus sanativa.</p>
+
+       </div>
+       </div>
+       <div>         
+           <head xml:id="l1-Hacfacf">
+               <supplied>Aliqua conclusiones finales</supplied>
+           </head>
+        
+        <p xml:id="l1-itfeii">Ideo 
+            <app to="#l1-Aidethe">
+                <lem>theologi</lem>
+                <rdg wit="#R #SV #S">theologici</rdg>
+                <note xml:lang="en">"theologi" is preferred because Plaoul is talking about "faithful theologians." Thus we need the world "theologians" not "theological."</note>
+            </app> 
+            fideles maxime debent pollere scientiis humanitus adinventis. Et si non polleant, 
+            <app to="#l1-Apoleri">
+                <lem>erit</lem>
+                <rdg wit="#V">est</rdg>
+            </app> 
+            eorum defectus, quia per fidem eorum 
+            <app to="#l1-Aeorint">
+                <lem>intellectus</lem>
+                <rdg wit="#R #SV #S" type="om."/>
+            </app> 
+            illustratur.</p>
+
+        <p xml:id="l1-eehnhf">Et ex hoc redarguendus est 
+            <app to="#l1-Aestave">
+                        <lem><name ref="#Averroes">Averroes</name>,</lem>
+                        <rdg wit="#SV" type="corrReplace">
+                            <corr xml:id="l1-Cadvoys">
+                                <del>Adverroes</del>
+                                <add>Averroes</add>
+                            </corr>
+                        </rdg>
+                    </app> 
+            qui multum erroneae dicit quod 
+            <app to="#l1-Aquoleg">
+                <lem>leges</lem>
+                <rdg wit="#SV">legent</rdg>
+            </app> 
+            praebent impedimentum doctrinae, et hoc 
+            <app to="#l1-Ahocpon">
+                <lem>ponit</lem>
+                <rdg wit="#V">videtur ponere</rdg>
+            </app> 
+            in 
+            <ref xml:id="l1-Rprorum">
+                <seg>prologo III <title ref="PhysicsCommentary">Physicorum</title>.</seg>
+                <bibl><name ref="#Averroes">Averroes</name>, <title ref="#PhysicsCommentary">Commentarius in libris Physicorum</title> III, prol.</bibl>
+            </ref> 
+            Hoc autem erroneum est quoad legem Christianam. 
+            <app to="#l1-Aestunu">
+                <lem>Unde et de hoc est unus</lem>
+                <rdg wit="#R #SV #S">unus et de hoc est</rdg>
+                <note xml:lang="en">We think the best reading is the one that in V which includes the "unde" as transition to the next claim</note>
+            </app> 
+            <ref corresp="#l1-Qdqliae">articulus Parisiensis</ref> 
+            <app to="#l1-Apardic">
+                <lem>dicens:</lem>
+                <rdg wit="#V" type="intextu">quod</rdg>
+            </app> 
+            <cit>
+                <quote xml:id="l1-Qdqliae">dicere quod lex Christi impediat addiscere: 
+                    <app to="#l1-Aadderr">
+                        <lem>error.</lem>
+                        <rdg wit="#S">errori.</rdg>
+                    </app>
+                </quote>
+                <bibl>Ariticulus Parisiensis</bibl>
+            </cit> 
+            De lege autem <name ref="#Muhammad">Mohommad</name> quam aliquando 
+            <cb ed="#R" n="2vb"/> 
+            tenuit <name ref="#Averroes">Averroes</name>, verum est propter corruptiones 
+            <app to="#l1-Acorini">
+                <lem>in</lem>
+                <rdg wit="#R" type="corrDeletion">
+                    <corr corresp="#l1-Cmuumuu">
+                        <del rend="strikethrough">muu</del>
+                    </corr>
+                </rdg>
+            </app> 
+            moribus, quae docentur in 
+            <app to="#l1-Ainiill">
+                <lem>illa</lem>
+                <rdg wit="#S">secunda</rdg>
+            </app> 
+            lege. De lege
+         autem <name ref="#Jews">Iudaeorum</name> similiter, quia tunc deserti
+         erant a Deo, sicut 
+            <app to="#l1-Asicnun"> 
+                <lem>nunc.</lem> 
+                <rdg wit="#V" type="om."/>
+            </app> 
+            <app to="#l1-Anunete">
+                <lem>Et</lem>
+                <rdg wit="#S" type="om."/>
+            </app> 
+            licet <name ref="#Averroes">Averroes</name> 
+            <app to="#l1-Aseeess">
+                <lem>protestatus fuerit aliquando se esse</lem>
+                <rdg wit="#V">aliquando protestatus sic fuisse</rdg>
+            </app> 
+            Christianum verisimile, est tamen 
+            <app to="#l1-Atameum">
+                <lem>eum</lem>
+                <rdg wit="#R #SV #S" type="om."/>
+            </app> 
+            numquam habuisse fidem.</p>
+  
+        <p xml:id="l1-qeeppn">
+            <app to="#l1-Aquaest">
+                <lem>Quantum</lem>
+                <rdg wit="#V" type="intextu">autem</rdg>
+            </app> 
+            est ex parte apparentiarum, sunt duo modi. Aliqua enim est apparentia, quae provenit ex parte obiecti et modi 
+            <app to="#l1-Amodrep">
+                <lem>repraesentandi</lem>
+                <rdg wit="#V">necessitandi</rdg>
+            </app> 
+            ipsius; et ista est 
+            <app to="#l1-Aestcom">
+                <lem>communiter</lem>
+                <rdg wit="#R">quare</rdg>
+            </app> 
+            in lumine naturali, sic enim principiis <app to="#l1-Apriass">
+                <lem>assentimus</lem>
+                <rdg wit="#V" type="intextu">eum</rdg>
+            </app> 
+            propter evidentiam 
+            <app to="#l1-Aeviqua">
+                <lem>quam</lem>
+                <rdg wit="#V" type="intextu">evidentiam</rdg>
+            </app> 
+            faciunt ex suo modo enuntiandi. Ideo 
+            <ref corresp="#l1-Qaeqvfd">
+                <name ref="#Aristotle">Aristoteles</name> 
+                    <app to="#l1-Apradic">
+                        <lem>in <title ref="#Categories">Praedicamentis</title> dicit</lem>
+                        <rdg wit="#R #SV #S" type="om."/>
+                    </app>
+            </ref>  
+            quod: 
+            <cit>
+                <quote xml:id="l1-Qaeqvfd">ab eo quod res est 
+                    <app to="#l1-Afaldic">
+                        <lem>vel non est, oratio vera vel falsa dicitur.</lem>
+                        <rdg wit="#R #SV #S">etc.</rdg>
+                        <note xml:lang="en">Here again we choose the most explicit reading, founding ms V</note>
+                    </app> <!-- here's where I expect an unwanted double space to occur -->
+                </quote>
+                <bibl>
+                    <name ref="#Aristotle">Aristotles</name>, 
+                    <title ref="#Categories">Praedicamenta</title>, XII, 14b18-22</bibl>
+            </cit>
+         Alia est apparentia, quae non provenit ab obiecto 
+            <cb ed="#V" n="7rb"/> 
+            sed prior est. Et secundum hoc dico quod divina evidentia est prior quam quodcumque obiectum 
+            <cb ed="#S" n="4ra"/> 
+            creatum; et ad illum modum refertur 
+            <app to="#l1-Arefevi">
+                <lem>evidentia</lem>
+                <rdg wit="#V">apparentia</rdg>
+            </app> 
+            fidei, quia fides inter omnes habitus maxime imitatur divinam cognitionem 
+            <app to="#l1-Acogint">
+                <lem>intantum</lem>
+                <rdg wit="#V">tantum</rdg>
+            </app>
+            <app to="#l1-Aessfal">
+                <lem>quod sibi non potest subesse falsum.</lem>
+                <rdg wit="#V">sibi quod non poterit falsum.</rdg>
+            </app> 
+            Et 
+            <app to="#l1-Aetssic">
+                <lem>sicut</lem>
+                <rdg wit="#R #SV">sic</rdg>
+            </app> 
+            cognitio divina se habet respectu futurorum contingentium, 
+            <app to="#l1-Asicete">
+                <lem>sic et</lem>
+                <rdg wit="#R #SV #S" type="om."/>
+                <note xml:lang="en">We prefer to include "et" here because we think it should read: "so also"</note>
+            </app> 
+            fides. 
+            <app to="#l1-Afidnam">
+                <lem>Nam</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            de tali futuro contingenti, si erit, 
+            <app to="#l1-Aeriinc">
+                <lem>inclinavit</lem>
+                <rdg wit="#V">inclinat</rdg>
+            </app> 
+            ad 
+            <app to="#l1-Aassill">
+                <lem>assensum illius:</lem>
+                <rdg wit="#V">assentiendum sibi:</rdg>
+            </app> 
+            si non erit, non inclinavit. Et ex hoc posset oriri pulchra consideratio: utrum, 
+            <cb ed="#SV" n="188va"/> 
+            <app to="#l1-Autrsci">
+                <lem>scilicet,</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            fidei possit subesse falsum; et iterum, utrum Deus aliquam creaturam 
+            <app to="#l1-Acreposs">
+                <lem>possit</lem>
+                <rdg wit="#R">posset</rdg>
+                <rdg wit="#S #SV" type="om."/>
+                <note xml:lang="en">We follow V here because we do not see any strong reason to prefer the imperfect tense over the present</note>
+            </app> 
+            producere 
+            <app to="#l1-Aperess">
+                <lem>per essentiam</lem>
+                <rdg wit="#R #SV #S">pro essentia</rdg>
+            </app> quae haberet consimilem conditionem sicut fides 
+            <app to="#l1-fidhab">
+                <lem>habet.</lem>
+                <rdg wit="#V" type="om."/>
+            </app> 
+            Et 
+            <app to="#l1-Aetttun">
+                <lem>tunc</lem>
+                <rdg wit="#V">sic</rdg>
+            </app> 
+            de illa 
+            <app to="#l1-Aillqua">
+                <lem>quaereretur,</lem>
+                <rdg wit="#V">quaerit</rdg>
+            </app> 
+            utrum 
+            <app to="#l1-Autrill">
+                <lem>illa</lem>
+                <rdg wit="#S #V" type="om."/>
+            </app> 
+            posset errare vel 
+            <app to="#l1-Avelutr">
+                <lem>utrum</lem>
+                <rdg wit="#V">an</rdg>
+            </app> 
+            necessario esset 
+            <app to="#l1-Aessrec">
+                <lem>recta.</lem>
+                <rdg wit="#V" type="intextu">Et de istis non plus pro nunc</rdg>
+                <note xml:lang="en">Which choose to exclude this final line since it is appears like a line proper to a "reportatio" which would likely be removed during later revisions as appears to be the case in R, SV, and S.</note>
+            </app>
+        </p>
+
+</div>       
+     </div>
+       </div>
+   </div>
+    
+  </body>
+ </text>
+</TEI>
